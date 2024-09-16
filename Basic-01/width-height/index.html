@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- width -->
+     <div class="bg-black text-white w-4">Hellow</div>
+     <div class="bg-black text-white w-48">Hellow</div>
+     <div class="bg-black text-white w-96">Hellow</div>
+<!-- Percentage -->
+<div class="bg-black text-white w-1/4">Hellow</div>
+<div class="bg-black text-white w-1/3">Hellow</div>
+<div class="bg-black text-white w-1/2">Hellow</div>
+  <!-- Width pof the viewport -->
+   <div class="bg-blue-500 text-white w-screen">Hellow</div>
+
+   <!-- 100% of container -->
+    <div class="bg-blue-300 text-white w-full">Hello</div>
+<!-- Arbitary width -->
+<div class="bg-blue-300 text-white w-[300px]">Hello</div>
+<!-- Max width -->
+ <div class="bg-gray-500 max-w-lg mx-auto">
+    Lorem ipsum dolor sit amet consectetur
+     adipisicing elit. Reprehenderit quam dignissimos rerum animi,
+     ' quibusdam, voluptate labore ad a molestias, ex pariatur. 
+     Cumque fugiat, architecto error recusandae voluptates soluta placeat necessitatibus.
+ </div>
+ <!-- Height(Most of the same options as widths) -->
+  <div class="flex items-end">
+    <div class="bg-orange-500 w-20 h-24">Hello world</div>
+    <div class="bg-orange-500 w-20 h-32">Hello world</div>
+    <div class="bg-orange-500 w-20 h-40">Hello world</div>
+    <div class="bg-orange-500 w-20 h-64">Hello world</div>
+    <div class="bg-orange-500 w-20 h-96">Hello world</div>
+    <!-- FUll screen height -->
+</div>
+<div class="bg-blue-300 text-white h-screen">JHello</div>
+</body>
+</html>

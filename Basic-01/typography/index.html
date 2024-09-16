@@ -1,0 +1,60 @@
+~<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            fontFamily:{
+'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['Fira Code', 'Georgia'], 
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+            },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- font family -->
+<p class="font-sans">Font styling is ok or not</p>
+<p class="fonst-serif">Font styling is ok or not</p>
+<p class="font-mono">Font styling is ok or not</p>
+<!-- font weight -->
+ <p class="font-light">Tailiwnd is library for CSS</p>
+ <p class="font-normal">Tailiwnd is library for CSS</p>
+ <p class="font-medium">Tailiwnd is library for CSS</p>
+ <p class="font-semibold">Tailiwnd is library for CSS</p>
+ <p class="font-bold">Tailiwnd is library for CSS</p>
+ <!-- Letter spacing -->
+  <div class="tracking-right">Tailwid is perfect solution</div>
+  <div class="tracking-nromal">Tailwid is perfect solution</div>
+  <div class="tracking-wide">Tailwid is perfect solution</div>
+  <!-- Text alignment -->
+  <div class="text-left">Tailwid is perfect solution</div>
+  <div class="text-center">Tailwid is perfect solution</div>
+  <div class="text-right">Tailwid is perfect solution</div>
+  <!-- Text decoration -->
+  <div class="underline decoration-2 decoration-blue-400">Tailwid is perfect solution</div>
+  <div class="underline decoration-2 decoration-dotted">Tailwid is perfect solution</div>
+  <div class="underline decoration-2 decoration-dashed">Tailwid is perfect solution</div>
+  <div class="underline decoration-2 decoration-wavy">Tailwid is perfect solution</div>
+<!-- Decoration offset -->
+ <div class="underline decoration-4 decoration-blue-400 underline-offset-8 mt-20">Tailwind is awsemone</div>
+  <!-- Text transform -->
+  <div class="normal-case mt-20">Tailwid is perfect solution</div>
+  <div class="uppercase">Tailwid is perfect solution</div>
+  <div class="lowercase">Tailwid is perfect solution</div>
+  <div class="capitalize">Tailwid is perfect solution</div>
+</body>
+</html>

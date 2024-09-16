@@ -28,5 +28,7 @@ Utility classes are simple HTML classes typically scoped to a single and specifi
 
  ----> On medium screen and up , we actually want it to be a flex row, which is a horizontal
 
- Q.1 How to write 10 div short term
+***Q.1 How to write 10 div short term
  div{Item $} *10  , here $=number sign , 
+***Q.2 What is Z-index?
+= The indexes is kind of the placement on how far away from you or how far towards you towards the screen
