@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+   <div class=" grid grid-cols-1 md:grid-cols-3  bg-gray-700">
+     <div class="md:col-span-2 md:row-span-2 p-10 border border-blue-600 bg-blue-100div">item 1</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 2</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 3</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 4</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 5</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 6</div>
+     <div class="md:col-span-2  p-10 border border-blue-600 bg-blue-100div">item 7</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 8</div>
+     <div class="col-span-3 p-10 border border-blue-600 bg-blue-100div">item 9</div>
+     <div class="p-10 border border-blue-600 bg-blue-100div">item 10</div>
+
+
+   </div>
+</body>
+</html>
+
+<!-- span classs push to basically push everything over -->

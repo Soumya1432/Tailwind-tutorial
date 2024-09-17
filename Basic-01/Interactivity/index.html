@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Focus state styling -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-500 focus:text-white">Submit</button>
+    <!-- Active state styling -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-yellow-500 active:text-white">Submit</button>
+    <!-- Styling based on parent state -->
+    <a href=""
+        class="group block max-w-xs max-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-700 textwhite">
+        <h3 class="group-hover:text-white">Card title</h3>
+        <p class="group-hover:text-red-500">This is the card text</p>
+    </a>
+    <!-- Pseduo classes -->
+    <ul>
+        <li class="first:bg-red-300 even:bg-green-600 odd:bg-orange-700 ">item 1</li>
+        <li class="first:bg-red-300 even:bg-green-600 odd:bg-orange-700 ">item 2</li>
+        <li class="first:bg-red-300 even:bg-green-600 odd:bg-orange-700">item 3</li>
+        <li class="first:bg-red-300 even:bg-green-600 odd:bg-orange-700">item 4</li>
+        <li class="first:bg-red-300 even:bg-green-600 odd:bg-orange-700">item 5</li>>
+    </ul>
+    <!-- Appearance -->
+    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components
+   -->
+    <button class="bg-black text-white py-3 px-5 rounded-lg m-3 cursor-not-allowed">Submit </button>
+
+    <!-- User select -->
+    <button class="select-none">Lorem ipsum done matter</button>
+    <button class="select-text">Lorem ipsum done matter</button>
+    <button class="select-all">Lorem ipsum done matter</button>
+    <button class="select-auto">Lorem ipsum done matter</button>
+
+    <!-- Smooth scroll example -->
+
+    <a href="#item" class="block my-6">Go to Item</a>
+
+    <p>
+        Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Culpa,
+        tempora labore. Adipisci, nobis eveniet
+        aliquid exercitationem dolor magnam velit
+        error animi eaque reiciendis, perferendis
+        voluptate quo cum reprehenderit atque iste
+        maxime, culpa tenetur similique expedita!
+        Sed possimus iste amet quibusdam.
+        Lorem ipsum dolor sit
+        amet consectetur adipisicing
+        elit. Rerum, deleniti mollitia?
+        Voluptatum, laudantium doloribus
+        ! Amet nostrum nam dignissimos ven
+        iam! Nihil mollitia ipsum, debitis,
+        eveniet maxime neque beatae corpor
+        is corrupti voluptas id minima qui!
+        Sunt accusamus, magni deserunt nec
+        essitatibus recusandae molestiae u
+        t quia, nulla deleniti iusto rem fugit neq
+        ue aliquam nihil et, nostrum aspernatur corr
+        upti vero laboriosam odit harum. At, similique
+        illum. Quod magni totam optio nisi ut aperiam haru
+        m in! Soluta, iusto quaerat aliquid ducimus rerum eligendi
+        excepturi eos repellat sunt quae quasi animi libero unde quia
+        reprehenderit ullam accusamus officia! Reprehenderit animi possimus
+        cumque doloremque neque accusamus provident consequuntur!
+        
+    </p>
+
+</body>
+
+</html>

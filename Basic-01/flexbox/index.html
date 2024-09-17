@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+
+    
+<!-- Flex and alignmemnt -->
+
+ <!-- <div class="flex flex-wrap justify-between h-72 items-center w-full bg-gray-500 ">
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 1</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 2</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 3</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 4</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 5</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 3</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 4</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 5</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 3</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 4</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 5</div>
+ </div> -->
+
+<!-- Flex coloumn, Gap and order -->
+
+<!-- <div class="flex flex-col gap justify-between h-72 items-center w-full bg-gray-500 ">
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 1</div>
+    <div class="order-2 p-10 border border-blue-500 bg-blue-300" >00 2</div>
+    <div class=" order-5 p-10 border border-blue-500 bg-blue-300" >00 3</div>
+    <div class="order-4 p-10 border border-blue-500 bg-blue-300" >00 4</div>
+    <div class="order-1  p-10 border border-blue-500 bg-blue-300" >00 5</div>
+ 
+ </div> -->
+
+
+<!-- Grow and Shrink -->
+ <div class="flex w-full bg-gray-500 ">
+    <div class="flex-initial w-64 p-10 border border-blue-500 bg-blue-300" >00 1</div>
+    <div class="flex-none w-64 p-10 border border-blue-500 bg-blue-300" >00 2</div>
+    <div class="flex-auto w-64 p-10 border border-blue-500 bg-blue-300" >00 3</div>
+    <div class="flex-1 w-64 p-10 border border-blue-500 bg-blue-300" >00 4</div>
+    <div class="w-64 p-10 border border-blue-500 bg-blue-300" >00 5</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 6</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 7</div>
+    <div class="p-10 border border-blue-500 bg-blue-300" >00 8</div>
+ </div>
+
+ <div class="flex text-center">
+    <div class="flex-1 bg-blue-600">Hello</div>
+    <div class="flex-1 bg-blue-600">Hello</div>
+    <div class="flex-1 bg-blue-600">Hello</div>
+ </div>
+</body>
+</html>
+
+<!-- 
+flex properties
+flex-none  flex:none
+prevent item from growing or shrinking
+
+flex-initial  flex:0 1 auto;
+
+allow item to shrink but not grow, taking into account its initial size
+
+flex-auto  flex:1 1 auto
+Allow item to grow and shrink taking into account its initial size
+
+flex-1  flex:1 1 0%;
+allow item to grow and shrink as needed, ignoring its initial size -->
