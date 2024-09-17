@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '550px',
+                    md: '800px',
+                    lg: '1200px',
+                    xl: '1440px'
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                    serif: ['Merriweather', 'serif']
+                },
+                fontSize: {
+                    sm: '0.750rem',
+                    base: '1rem',
+                    xl: '1.333rem',
+                    '2xl': '1.777rem',
+                    '3xl': '2.369rem',
+                    '4xl': '3.158rem',
+                    '5xl': '4.210rem',
+                },
+                fontFamily: {
+                    heading: 'Actor',
+                    body: 'Inter',
+                },
+                fontWeight: {
+                    normal: '400',
+                    bold: '700',
+                },
+                extend: {
+                    colors: {
+                        'text': '#02020d',
+                        'background': '#f2f2fd',
+                        'primary': '#1e7b35',
+                        'secondary': '#7698ad',
+                        'accent': '#ee3e17',
+                    },
+                    spacing: {
+                        6: '2.5rem',
+                        128: '22rem',
+                    },
+                    borderRadius: {
+                        '4xl': "2rem"
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        function showBrowser() {
+            const width = window.innerWidth;
+            document.querySelector('h1').innerHTML = `width:${width}`
+
+        }
+
+        window.onload = showBrowser;
+        window.onresize = showBrowser;
+
+    </script>
+</head>
+
+<body class="bg-black sm:bg-green-500 md:bg-blue-800 lg:bg-yellow-500 xl:bg-purple-700 2xl:bg-orange-600">
+    <h1 class="text-white text-6xl">Customization</h1>
+    <div class="border-secendary border p-6 mb-128 max-w-sm mx-auto rounded-4xl">
+        <h1 class="text-white text-6xl ">Customization</h1>
+    </div>
+</body>
+
+</html>

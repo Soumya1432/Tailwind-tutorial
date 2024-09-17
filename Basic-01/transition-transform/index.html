@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            transitionDuration:{
+                2000:'2000ms'
+            },
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- Transition -->
+     <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:opacity-20 transitio-colors duration-500">
+        Click Me
+     </button>
+     <!-- Transition & transform -->
+     <button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700 hover:rotate-12 transition-tranform">
+        Click Me
+     </button>
+    <img src="../asstes/pexels-julia-kuzenkov-442028-1974508.jpg" class=" w-48 hover:rotate-180 hover:scale-75 hover:skew-x-12 transition duration-1000" />
+</body>
+</html>
