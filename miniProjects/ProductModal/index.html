@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ <!-- Global container -->
+  <div class="flex items-center justify-center min-h-screen bg-slate-800">
+    <!-- card conatiner -->
+     <div class="flex flex-col p-6 m-3 space-y-10 bg-white rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+  <!--Image div  -->
+        <div>
+            <img src="../../Basic-01/asstes/pexels-julia-kuzenkov-442028-1974508.jpg" alt="" class="mx-auto duration-200 w-60 hover:scale-105"/>
+
+        </div>
+    <!-- Content -->
+     <div class="flex flex-col space-y-6">
+          <!-- Label & description container -->
+           <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+               <div>
+                <div class="inline-block px-3 py-1 text-sm text-white bg-black rounded-full">
+                  Free shipping
+                </div>
+               </div>
+               <!-- Ttile -->
+                <div class="max-w-sm text-2xl font-medium">
+                  The entry point of the gamer should buy also plant
+                </div>
+                <!-- Price Container -->
+                 <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+                    <p class="line-through">$903</p>
+                    <p class="text-5xl font-bold">$566</p>
+                    <p class="text-sm font-light text-gray-500">THis offer till valid under Octber 2nd to 12th as long as stock last</p>
+                 </div>
+                 <!-- Button group -->
+                  <div class="group">
+                      <button class="w-full bg-blue-800 text-white border-b-8 border-b-blue-700 rounded-lg group-hover:border-t-8 ">
+                         <div class="px-8 py-4 bg-blue-500 rounded-lg">
+                            Add to card
+                         </div>
+                      </button>
+                  </div>
+           </div>
+     </div>
+     </div>
+  </div>
+</body>
+</html>
