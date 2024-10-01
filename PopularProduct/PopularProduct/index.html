@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ["Marcellus", 'serif'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                    'roboto':["Roboto", 'sans-serif'],
+                },
+                extend: {
+
+                }
+            }
+        }
+    </script>
+    <style>
+  .round{
+     height: 300px;
+     width: 300px;
+     border-radius: 100%;
+     border: 2px green;
+
+  }
+    </style>
+</head>
+
+<body>
+   
+    <div class="max-w-xs bg-white border border-gray-200 rounded-lg shadow-md p-4">
+        <!-- Product Image -->
+        <img class="w-full rounded-lg h-[200px] object-cover"
+            src="https://images.unsplash.com/photo-1726519372376-6825c67bef15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Product Image">
+
+        <!-- Product Details -->
+        <div class="p-1 mt-2">
+            <!-- Product Name -->
+            <h5 class="text-xl font-semibold tracking-tight text-gray-900">Peach Standard Cymbidi</h5>
+
+            <!-- Product header -->
+            <p class="text-gray-500 text-sm mt-4">
+                Cymbidium orchids, often called boat orchids, are beloved for their striking...
+            </p>
+
+            <!-- Price Section -->
+            <div class="font-roboto mt-4">
+                <span class="text-[#636363]line-through">₹249.00</span>
+                <span class="text-green-500 text-md ml-2">50% Off</span>
+                <div class="text-lg font-bold font-roboto text-gray-900 ">₹249.00</div>
+            </div>
+
+            <!-- Rating -->
+            <div class="flex items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                </svg>
+
+                <p class=" text-gray-900 font-medium text-sm">4.7</p>
+                <span class="ml-2 text-gray-500 text-sm">145</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-4 flex justify-center gap-8">
+                <button
+                    class="text-white bg-[#1E481F] order-2  font-medium rounded-lg text-sm px-[24px] py-[10px]">
+                    Add to cart
+                </button>
+                <button
+                    class="text-[#1E481F] border border-[#1E481F] font-medium rounded-lg text-sm px-8 py-[10px]">
+                    Buy Now
+                </button>
+            </div>
+        </div>
+  
+    </div>
+
+
+</body>
+
+</html>

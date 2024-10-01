@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ["Marcellus", 'serif'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                },
+                extend: {
+
+                }
+            }
+        }
+    </script>
+<style>
+  .bg-image
+  {
+    background-image: url('https://plus.unsplash.com/premium_photo-1700580343303-1ee3256107fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHBsYW50JTIwYmFja2dyb3VuZCUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+  }
+  .overlay {
+            background-color: #31865098; /* Green overlay with opacity */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+        /* Custom CSS for the background overlay */
+
+</style>
+</head>
+
+<body>
+
+    <div class="bg-image relative h-[64px] flex items-center">
+
+        <div class="overlay absolute "></div>
+
+
+        <div class="relative flex flex-wrap   xl:justify-start items-center lg:px-[96px] lg:py-[10px] sm:px-[24px] sm:text-xl">
+            <span class="lg:text-[32px] md:text-2xl sm:text-xl text-white">Home</span>
+            <div class="lg:text-3xl md:text-2xl sm:text-xl text-white mx-2">
+                <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5 24L22.5 16L13.5 8" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="lg:text-3xl md:text-2xl sm:text-xl text-white ">Shop Cart</span>
+        </div>
+
+
+
+    </div>
+    
+    
+    <!-- <div class="breadcrumb-container relative h-16 flex items-center text-white px-6">
+        <div class="overlay absolute inset-0  opacity-60"></div>
+        <img src="https://plus.unsplash.com/premium_photo-1700580343303-1ee3256107fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fHBsYW50JTIwYmFja2dyb3VuZCUyMGRlc2t0b3B8ZW58MHx8MHx8fDA%3D" alt="Background" class="absolute inset-0 w-full h-full object-cover" />
+        <nav class="relative z-10">
+            <ol class="flex space-x-2 text-lg">
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li>
+                    <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5 24L22.5 16L13.5 8" stroke="white" style="stroke:white;stroke-opacity:1;" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </li>
+                <li><a href="#" class="hover:underline">Shop Cart</a></li>
+            </ol>
+        </nav>
+    </div> -->
+    
+</body>
+
+</html>

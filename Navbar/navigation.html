@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ["Marcellus", 'serif'],
+                    'mono': ['ui-monospace', 'SFMono-Regular'],
+                },
+                extend: {
+
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-200 ">
+    <header class="bg-[#FFFFFF]  ">
+    <nav class="container relative mx-auto ">
+        <!-- Flex Container For Nav Items -->
+        <div class="flex items-center justify-between lg:py-[10px] lg:px-[20px] px-[20px] py-[10px]">
+          <!-- Logo -->
+          <div class="z-30">
+           <h1 class="lg:text-[32px] text-[20px] text-[#307331] ">GreenNatures</h1>
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden items-center space-x-[24px] md:flex text-[18px] ">
+            <a href="#features" class="tracking-widest ">Home</a>
+            <a href="#download" class="tracking-widest ">About us</a>
+            <a href="#download" class="tracking-widest ">Products</a>
+            <a href="#faq" class="tracking-widest ">Blogs</a>
+            <a href="#faq" class="tracking-widest ">Contact us</a>
+            
+           <div class="lg:flex hidden gap-4 pl-4  text-[20px] items-center">
+            <a href="#" class=" underline ">Login</a>
+            
+            <span class="flex gap-2 items-center">
+                <a href="#" class="flex  ">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8257 5.96903C21.7562 5.88583 21.6692 5.81891 21.571 5.773C21.4728 5.72709 21.3657 5.7033 21.2573 5.70332H6.32177L5.75887 2.60827C5.72786 2.43761 5.63795 2.28324 5.50479 2.17208C5.37164 2.06093 5.20369 2.00003 5.03024 2H2.74066C2.54423 2 2.35584 2.07803 2.21694 2.21694C2.07803 2.35584 2 2.54423 2 2.74066C2 2.9371 2.07803 3.12549 2.21694 3.26439C2.35584 3.40329 2.54423 3.48133 2.74066 3.48133H4.40716L6.77358 16.4698C6.84328 16.855 7.01352 17.2149 7.26704 17.5132C6.91712 17.84 6.66456 18.2574 6.53736 18.719C6.41016 19.1806 6.41329 19.6684 6.54641 20.1284C6.67952 20.5883 6.93742 21.0024 7.29151 21.3247C7.6456 21.647 8.08203 21.865 8.55243 21.9544C9.02282 22.0438 9.50879 22.0012 9.95644 21.8313C10.4041 21.6614 10.7959 21.3708 11.0885 20.9918C11.3811 20.6128 11.563 20.1601 11.6141 19.684C11.6651 19.208 11.5833 18.727 11.3777 18.2946H15.5828C15.4171 18.6415 15.3314 19.0212 15.3319 19.4056C15.3319 19.9183 15.484 20.4195 15.7688 20.8458C16.0537 21.2721 16.4585 21.6044 16.9322 21.8006C17.4059 21.9968 17.9271 22.0481 18.43 21.9481C18.9329 21.8481 19.3948 21.6012 19.7573 21.2386C20.1199 20.8761 20.3668 20.4142 20.4668 19.9113C20.5668 19.4085 20.5155 18.8872 20.3193 18.4136C20.1231 17.9399 19.7908 17.535 19.3645 17.2502C18.9382 16.9653 18.437 16.8133 17.9243 16.8133H8.95946C8.78601 16.8132 8.61806 16.7523 8.48491 16.6412C8.35176 16.53 8.26184 16.3757 8.23083 16.205L7.93734 14.5913H18.677C19.1973 14.5912 19.7012 14.4085 20.1006 14.075C20.5001 13.7415 20.7698 13.2785 20.8629 12.7665L21.9887 6.57638C22.0077 6.46939 22.003 6.35951 21.9748 6.25455C21.9467 6.14959 21.8958 6.05211 21.8257 5.96903ZM10.1473 19.4056C10.1473 19.6253 10.0821 19.8401 9.96006 20.0228C9.83799 20.2055 9.66447 20.3479 9.46146 20.432C9.25846 20.5161 9.03507 20.5381 8.81956 20.4952C8.60405 20.4524 8.40609 20.3466 8.25071 20.1912C8.09534 20.0358 7.98952 19.8379 7.94666 19.6223C7.90379 19.4068 7.92579 19.1834 8.00988 18.9804C8.09397 18.7774 8.23637 18.6039 8.41907 18.4818C8.60177 18.3598 8.81657 18.2946 9.0363 18.2946C9.33096 18.2946 9.61354 18.4117 9.8219 18.62C10.0302 18.8284 10.1473 19.1109 10.1473 19.4056ZM19.0353 19.4056C19.0353 19.6253 18.9701 19.8401 18.848 20.0228C18.7259 20.2055 18.5524 20.3479 18.3494 20.432C18.1464 20.5161 17.923 20.5381 17.7075 20.4952C17.492 20.4524 17.2941 20.3466 17.1387 20.1912C16.9833 20.0358 16.8775 19.8379 16.8346 19.6223C16.7918 19.4068 16.8138 19.1834 16.8978 18.9804C16.9819 18.7774 17.1243 18.6039 17.307 18.4818C17.4897 18.3598 17.7045 18.2946 17.9243 18.2946C18.2189 18.2946 18.5015 18.4117 18.7099 18.62C18.9182 18.8284 19.0353 19.1109 19.0353 19.4056Z" fill="black" style="fill:black;fill-opacity:1;"/>
+                        </svg>
+                        
+                    </a>
+              <a href="#" class="">cart</a>
+            </span>
+           </div>
+          </div>
+          <!-- Hamburger Button -->
+          <button
+            id="menu-btn"
+            class="z-30 block md:hidden focus:outline-none hamburger"
+          >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#1D1B20" style="fill:#1D1B20;fill:color(display-p3 0.1137 0.1059 0.1255);fill-opacity:1;"/>
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="fixed inset-0 z-20 hidden flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-black uppercase divide-y divide-gray-500 opacity-90 "
+        >
+          <div class="w-full py-3 text-center">
+            <a href="#features" class="block ">Home</a>
+          </div>
+
+          <div class="w-full py-3 text-center">
+            <a href="#download" class="block ">About us</a>
+          </div>
+
+          <div class="w-full py-3 text-center">
+            <a href="#faq" class="block ">Products</a>
+          </div>
+
+          <div class="w-full py-3 text-center">
+            <a href="#faq" class="block ">Blogs</a>
+          </div>
+          
+          <div class="w-full py-3 text-center">
+            <a href="#" class="block">Login</a>
+          </div>
+        </div>
+    </nav>
+    </header>
+
+<main>
+     <section>
+         <div class="max-w-full  lg:mt-10  mt-2 ">
+             <img class="w-full lg:h-[720px]  object-cover" src="./Frame 26.png"/>
+         </div>
+     </section>
+
+     <!-- Feature products -->
+     <section class="mt-24">
+         <div class="flex justify-around ">
+            <h1 class="text-3xl">Find Plant Category</h1>
+            <span class="flex space-x-4">
+                <h1>
+                  <svg width="43" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5039 19L63.5039 19V18H21.5039V19ZM21.5033 19L40.1699 1L39.6661 0.13623L20.9994 18.1362L21.5033 19ZM21.5033 18L40.1699 36L39.6661 36.8638L20.9994 18.8638L21.5033 18Z" fill="black" style="fill:black;fill-opacity:1;"/>
+                </svg>
+                
+                </h1>
+                <h1>
+                    <svg width="43" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.4961 19L0.496094 19L0.496094 18L42.4961 18V19ZM42.4967 19L23.8301 1.00001L24.3339 0.13623L43.0006 18.1362L42.4967 19ZM42.4967 18L23.8301 36L24.3339 36.8638L43.0006 18.8638L42.4967 18Z" fill="black" style="fill:black;fill-opacity:1;"/>
+                    </svg>
+                        
+                </h1>
+            </span>
+
+         </div>
+         <div class=""></div>
+     </section>
+
+<Section class="">
+    <div class="mx-auto container px-[24px] py-[12px] block flex flex-col ">
+          <span  class="text-center lg:text-[48px]">Most Popular Products</span>
+          <div class="flex mt-[32px] justify-center items-center font-regular space-x-[96px] lg:text-[32px] md:text-[24px] text-[16px]">
+               <a href="">Trees</a>
+               <a href="">Ferns</a>
+               <a href="">Herbs</a>
+               <a href="">Shrubs</a>
+               <a href="">Vines</a>
+          </div>
+
+
+
+          <div class="max-w-[320px]  bg-white border border-gray-200 rounded-xl shadow-md py-4 px-4 space-y-4 font-Marcellus">
+            <!-- Product Image -->
+            <img class="rounded-lg w-[300px] h-[200px] object-cover"
+                src="https://images.unsplash.com/photo-1726519372376-6825c67bef15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Product Image">
+            <!-- Product Details -->
+            <div class="space-y-2">
+                <!-- Product Name -->
+                <h1 class='text-lg text-slate-900 line-clamp-2 leading-6'>Peach Standard Cymbidi dfsnf sfsf sfs fsfs nfsfn
+                    snf s fsnfs fsf sfsfsfsfsg</h1>
+                <p class='text-wrap break-after-auto text-xs text-slate-400 line-clamp-2'>
+                    Cymbidium orchids, often called boat orchids, are beloved for their striking ahs ewhahas
+                </p>
+    
+                <!-- Price Section -->
+                <div class="font-Roboto">
+                    <span class="text-[#636363]line-through">₹249.00</span>
+                    <span class="text-green-500 text-md ml-2">50% Off</span>
+                    <div class="text-lg font-bold text-gray-900 ">₹249.00</div>
+                </div>
+    
+                <!-- Rating -->
+                <div class="flex items-center font-Roboto">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M9.049 2.927C9.316 2.282 10.684 2.282 10.951 2.927l1.338 3.455a1 1 0 00.812.608l3.462.336c.665.065.93.861.45 1.324l-2.49 2.364a1 1 0 00-.29.882l.588 3.437c.124.725-.628 1.277-1.27.936l-3.09-1.537a1 1 0 00-.92 0l-3.09 1.537c-.642.341-1.394-.211-1.27-.936l.588-3.437a1 1 0 00-.29-.882l-2.49-2.364c-.48-.463-.215-1.259.45-1.324l3.462-.336a1 1 0 00.812-.608l1.338-3.455z" />
+                    </svg>
+    
+                    <p class=" text-gray-900 font-medium text-sm">4.7</p>
+                    <span class="ml-2 text-gray-500 text-sm">145</span>
+                </div>
+    
+                <!-- Buttons -->
+                <div class="flex justify-between items-center">
+                    <button class="text-white bg-[#1E481F] order-2  font-medium rounded text-base px-4 py-2">
+                        Add to cart
+                    </button>
+                    <button class="text-[#1E481F] border border-[#1e481f] font-medium rounded text-base px-6 py-2">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+          
+        <div class=" sm:max-w-sm md:max-w-md p-4 max-w-[320px] lg:max-w-lg xl:max-w-xl rounded-lg overflow-hidden shadow-lg bg-white transition-all duration-300">
+          <!-- Product Image -->
+          <img class="w-full h-48 sm:h-64 object-cover" src="https://via.placeholder.com/300x200" alt="Plant Image">
+          
+          <!-- Product Details -->
+          <div class="p-4">
+              <h2 class="text-xl font-semibold text-gray-800">Peach Standard Cymbidi</h2>
+              <p class="text-gray-600 text-sm mb-4">Cymbidium orchids, often called boat orchids, are beloved for their striking</p>
+              
+              <!-- Pricing and Discount -->
+              <div class="flex items-center mb-2">
+                  <span class="text-red-500 text-lg font-bold mr-2">₹ 249.00</span>
+                  <span class="line-through text-gray-500 text-sm mr-2">₹ 249.00</span>
+                  <span class="text-green-500 text-sm">50% Off</span>
+              </div>
+  
+              <!-- Star Rating and Reviews -->
+              <div class="flex items-center mb-4">
+                  <div class="flex text-yellow-400 text-sm mr-2">
+                      <!-- Star icons (5 stars) -->
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.165-7.334-3.856-7.334 3.856 1.4-8.165-5.934-5.782 8.2-1.192z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.165-7.334-3.856-7.334 3.856 1.4-8.165-5.934-5.782 8.2-1.192z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.165-7.334-3.856-7.334 3.856 1.4-8.165-5.934-5.782 8.2-1.192z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.165-7.334-3.856-7.334 3.856 1.4-8.165-5.934-5.782 8.2-1.192z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-4 h-4" viewBox="0 0 24 24">
+                          <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.782 1.4 8.165-7.334-3.856-7.334 3.856 1.4-8.165-5.934-5.782 8.2-1.192z"/>
+                      </svg>
+                  </div>
+                  <span class="text-gray-600 text-sm">145</span>
+              </div>
+  
+              <!-- Action Buttons -->
+              <div class="flex space-x-4">
+                  <button class="w-full px-4 py-2 text-sm font-semibold text-green-600 border border-green-600 rounded-lg hover:bg-green-100 transition-colors duration-300">Buy Now</button>
+                  <button class="w-full px-4 py-2 text-sm font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors duration-300">Add to Cart</button>
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</Section>
+
+
+</main>
+
+
+<footer class=" bg-gray-100 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gr">
+        <span class="ml-3 text-xl">GreenNatures</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class=" font-medium  tracking-widest text-sm mb-3">Our Company</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-900 ">Home</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">About</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Services</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">News</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Contact</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium  tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-900 ">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium  tracking-widest text-sm mb-3">Services</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-900 ">Market Research</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Market Analysis</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">SEO consultancy</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Page Ranking</a>
+          </li>
+          <li></li>
+            <a class="text-gray-900 ">SMM</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class=" font-medium text-black tracking-widest text-sm mb-3">Features</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-900 ">Brand Strategy</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Audeience Analysis</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">CopyWriting</a>
+          </li>
+          <li>
+            <a class="text-gray-900 ">Team Training</a>
+          </li>
+          <li></li>
+            <a class="text-gray-900 ">Email Marketing</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-green-800 bg-opacity-75">
+    <div class="container mx-auto py-4 px-5 text-center items-center flex  sm:flex-row">
+           <span class="text-center">All Copywrights are reserved That greenary</span>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

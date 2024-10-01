@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="max-w-2xl mx-auto p-4 bg-white shadow-md rounded-lg flex flex-col sm:flex-row items-start sm:items-center">
+    
+    <!-- Product Image -->
+    <div class="w-full sm:w-1/4">
+      <img src="../Basic-01/asstes/pexels-julia-kuzenkov-442028-1974508.jpg" alt="Product Image" class="w-full h-auto rounded-md">
+    </div>
+
+    <!-- Product Details -->
+    <div class="w-full sm:w-2/3 sm:ml-6 mt-4 sm:mt-0">
+      <h2 class="text-xl font-semibold text-gray-800">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      </h2>
+
+      <!-- Rating and Reviews -->
+      <div class="flex items-center mt-2">
+        <div class="flex text-yellow-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.357 4.18a1 1 0 00.95.69h4.397c.969 0 1.371 1.24.588 1.81l-3.557 2.583a1 1 0 00-.364 1.118l1.357 4.18c.3.921-.755 1.688-1.54 1.118L10 13.977l-3.558 2.583c-.784.57-1.838-.197-1.539-1.118l1.357-4.18a1 1 0 00-.364-1.118L2.34 9.607c-.783-.57-.381-1.81.588-1.81h4.396a1 1 0 00.95-.69l1.357-4.18z" />
+          </svg>
+          <!-- Repeat 4 more star icons here -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.357 4.18a1 1 0 00.95.69h4.397c.969 0 1.371 1.24.588 1.81l-3.557 2.583a1 1 0 00-.364 1.118l1.357 4.18c.3.921-.755 1.688-1.54 1.118L10 13.977l-3.558 2.583c-.784.57-1.838-.197-1.539-1.118l1.357-4.18a1 1 0 00-.364-1.118L2.34 9.607c-.783-.57-.381-1.81.588-1.81h4.396a1 1 0 00.95-.69l1.357-4.18z" />
+          </svg>
+        </div>
+        <span class="ml-2 text-sm text-gray-500">(5,291 reviews)</span>
+      </div>
+
+      <!-- Pricing and Discount -->
+      <div class="flex items-center mt-3">
+        <span class="text-gray-500 line-through mr-2">₹ 249.00</span>
+        <span class="text-green-600 font-semibold">50% Off</span>
+      </div>
+      <div class="mt-1 text-2xl font-bold text-gray-800">₹ 249.00</div>
+
+      <!-- Buttons -->
+      <div class="flex space-x-4 mt-4">
+        <button class="bg-white text-green-700 border border-green-700 rounded-lg px-4 py-2 hover:bg-green-100">Buy Now</button>
+        <button class="bg-green-700 text-white rounded-lg px-4 py-2 hover:bg-green-800">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

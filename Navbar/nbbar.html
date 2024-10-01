@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenNatures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ["Marcellus", 'serif'],
+                },
+                extend: {}
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="bg-gray-100">
+            <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+                <!-- Logo -->
+                <div class="text-[#307331] text-xl md:text-2xl lg:text-3xl ">
+                    GreenNatures
+                </div>
+
+                <!-- Menu Links (Hidden on mobile) -->
+                <ul class="hidden lg:flex space-x-6 text-lg">
+                    <li><a href="#" class="hover:text-green-700">Home</a></li>
+                    <li><a href="#" class="hover:text-green-700">About us</a></li>
+                    <li><a href="#" class="hover:text-green-700">Products</a></li>
+                    <li><a href="#" class="hover:text-green-700">Blogs</a></li>
+                    <li><a href="#" class="hover:text-green-700">Contact us</a></li>
+                </ul>
+
+                <!-- Actions (Hidden on mobile) -->
+                <div class="hidden lg:flex space-x-6 text-lg">
+                    <a href="#" class="hover:text-green-700">Log In</a>
+                    <a href="#" class="flex items-center space-x-2 hover:text-green-700">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="..." fill="#1E1E1E" />
+                        </svg>
+                        <span>Cart</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Visible on mobile) -->
+                <div class="lg:hidden">
+                    <button id="menu-btn" class="block focus:outline-none">
+                        <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="lg:hidden hidden">
+                <ul class="flex flex-col space-y-4 py-4 px-6 text-lg">
+                    <li><a href="#" class="hover:text-green-700">Home</a></li>
+                    <li><a href="#" class="hover:text-green-700">About us</a></li>
+                    <li><a href="#" class="hover:text-green-700">Products</a></li>
+                    <li><a href="#" class="hover:text-green-700">Blogs</a></li>
+                    <li><a href="#" class="hover:text-green-700">Contact us</a></li>
+                    <li><a href="#" class="hover:text-green-700">Log In</a></li>
+                    <li><a href="#" class="flex items-center space-x-2 hover:text-green-700">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="..." fill="#1E1E1E" />
+                        </svg>
+                        <span>Cart</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
